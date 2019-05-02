@@ -94,11 +94,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Show All Platforms</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> OneM2M</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> GS1</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> OCF</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Watson IoT</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> Show All Platform</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> OneM2M</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> GS1</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> OCF</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> Watson IoT</a></li>
           </ul>
         </li>
 		<li class="treeview">
@@ -109,8 +109,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> List</a></li>
-            <li class="active"><a href="#"><i class="fa fa-circle-o"></i> Role</a></li>
+            <li  ><a href="user.html"><i class="fa fa-circle-o"></i> Users</a></li>
+            <li><a href="role.html" class="active"><i class="fa fa-circle-o"></i> Role</a></li>
           </ul>
         </li>
       </ul>
@@ -123,7 +123,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        User List
+        User Levels
       </h1>
     </section>
 
@@ -138,7 +138,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Registered User</h3>
+              <h3 class="box-title">Roles</h3>
 
               <div class="box-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -152,62 +152,64 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body table-responsive no-padding">
+              <a href="addrole.html" class="btn btn-success">Add Role</a>
               <table class="table table-hover">
                 <tr>
                   <th>ID</th>
-                  <th>User</th>
-                  <th>Date</th>
-                  <th>Role</th>
+                  <th>User Level</th>
                   <th>Action</th>
                 </tr>
-                <tr>
-                  <td>183</td>
-                  <td>John Doe</td>
-                  <td>11-7-2014</td>
-                  <td><span class="label label-success">Admin</span></td>
-                  <td>
-					 <span>
-					  <small class="label bg-blue">update</small>
-					  <small class="label bg-red">delete</small>
-					</span>
-				  </td>
-                </tr>
-                <tr>
-                  <td>219</td>
-                  <td>Alexander Pierce</td>
-                  <td>11-7-2014</td>
-                  <td><span class="label label-primary">Guest</span></td>
-                  <td>
-					 <span>
-					  <small class="label bg-blue">update</small>
-					  <small class="label bg-red">delete</small>
-					</span>
-				  </td>
-                </tr>
-                <tr>
-                  <td>657</td>
-                  <td>Bob Doe</td>
-                  <td>11-7-2014</td>
-                  <td><span class="label label-primary">Guest</span></td>
-                  <td>
-					 <span>
-					  <small class="label bg-blue">update</small>
-					  <small class="label bg-red">delete</small>
-					</span>
-				  </td>
-                </tr>
-                <tr>
-                  <td>175</td>
-                  <td>Mike Doe</td>
-                  <td>11-7-2014</td>
-                  <td><span class="label label-primary">Guest</span></td>
-                  <td>
-					 <span>
-					  <small class="label bg-blue">update</small>
-					  <small class="label bg-red">delete</small>
-					</span>
-				  </td>
-                </tr>
+                <tbody id="roleList">
+
+                </tbody>
+                <!--<tr>-->
+                  <!--<td>183</td>-->
+                  <!--<td>John Doe</td>-->
+                  <!--<td>11-7-2014</td>-->
+                  <!--<td><span class="label label-success">Admin</span></td>-->
+                  <!--<td>-->
+					 <!--<span>-->
+					  <!--<small class="label bg-blue">update</small>-->
+					  <!--<small class="label bg-red">delete</small>-->
+					<!--</span>-->
+				  <!--</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td>219</td>-->
+                  <!--<td>Alexander Pierce</td>-->
+                  <!--<td>11-7-2014</td>-->
+                  <!--<td><span class="label label-primary">Guest</span></td>-->
+                  <!--<td>-->
+					 <!--<span>-->
+					  <!--<small class="label bg-blue">update</small>-->
+					  <!--<small class="label bg-red">delete</small>-->
+					<!--</span>-->
+				  <!--</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td>657</td>-->
+                  <!--<td>Bob Doe</td>-->
+                  <!--<td>11-7-2014</td>-->
+                  <!--<td><span class="label label-primary">Guest</span></td>-->
+                  <!--<td>-->
+					 <!--<span>-->
+					  <!--<small class="label bg-blue">update</small>-->
+					  <!--<small class="label bg-red">delete</small>-->
+					<!--</span>-->
+				  <!--</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                  <!--<td>175</td>-->
+                  <!--<td>Mike Doe</td>-->
+                  <!--<td>11-7-2014</td>-->
+                  <!--<td><span class="label label-primary">Guest</span></td>-->
+                  <!--<td>-->
+					 <!--<span>-->
+					  <!--<small class="label bg-blue">update</small>-->
+					  <!--<small class="label bg-red">delete</small>-->
+					<!--</span>-->
+				  <!--</td>-->
+                <!--</tr>-->
               </table>
             </div>
             <!-- /.box-body -->
@@ -226,16 +228,48 @@
       <b>Version</b> 2.4.0
     </div>
   </footer>
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script>
+  $( document ).ready(function() {
+    var script = document.createElement('script');
+    script.src = 'users.js';
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+
+    window.users_callback = function (results) {
+      for (var i = 0; i < results.length; i++) {
+        var role_name = results[i].role_name;
+      //  for(var j = 0; j < results[i].users.length; j++) {
+        tableRow = '<tr>\n' +
+                '                  <td>'+results[i].role_id+'</td>\n' +
+                '                  <td>'+results[i].role_name+'</td>\n' +
+
+
+                '                  <td>\n' +
+                '\t\t\t\t\t <span>\n' +
+                '\t\t\t\t\t  <small class="label bg-blue">update</small>\n' +
+                '\t\t\t\t\t  <small class="label bg-red">delete</small>\n' +
+                '\t\t\t\t\t</span>\n' +
+                '\t\t\t\t  </td>\n' +
+                '                </tr>';
+        document.getElementById('roleList').innerHTML += tableRow;
+     //   }
+      }
+    }
+  });
+
+</script>
+
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-<!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
 <!-- Bootstrap 3.3.7 -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Morris.js charts -->

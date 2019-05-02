@@ -93,7 +93,7 @@
             <!--<li><a href="#"><i class="fa fa-circle-o"></i> Watson IoT</a></li>-->
           </ul>
         </li>
-        <li><a href="user.html"><i class="fa fa-book"></i> <span>User</span></a></li>
+        <li><a href="#"><i class="fa fa-book"></i> <span>User</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -478,7 +478,8 @@
 
           google.maps.event.addListener(marker, 'click', function () {
             // where I have added .html to the marker object.
-            window.location.href = "device.html?id="+current.id
+            infoWindowOnClick.setContent(infowincontent);
+            infoWindowOnClick.open(map, this);
           });
 
           // marker.addListener('click', function() {

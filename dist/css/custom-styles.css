@@ -39,4 +39,16 @@
     background-color:#222d32 !important;
 }
 
-button.gm-ui
+#piChartWrapper .box {
+    width: auto;
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    border-top-color: rgb(210, 214, 222);
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+#platforms div.inner {
+    color: #FFF;}
+.disappeared {visibility: hidden;}
