@@ -1,0 +1,42 @@
+/*style the box*/
+ .gm-style .gm-style-iw {
+    background-color: #222d32 !important;
+
+     top: 0 !important;
+    left: 0 !important;
+    padding: 10px !important;
+    display: block !important;
+
+ }
+
+.gm-style .gm-style-iw .gm-style-iw-d {
+    overflow: hidden !important;
+}
+ /*!*style the p tag*!*/
+ .gm-style .gm-style-iw #google-popup p{
+    padding: 10px;
+ }
+
+
+/*!*style the arrow*!*/
+.gm-style div div div div div div div div {
+    background-color: #222d32 !important;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*style the link*/
+.gm-style div div div div div div div div a {
+    color: #222d32;
+    font-weight: bold;
+}
+
+.gm-style .gm-style-iw-t::after {
+    background-color:#222d32 !important;
+}
+
+button.gm-ui
